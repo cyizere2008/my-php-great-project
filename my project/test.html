@@ -1,0 +1,13 @@
+<button onclick="showDiv()">Show Report</button>
+
+<div id="reportDiv" style="display:none; padding: 20px; border: 1px solid #ccc; margin-top: 10px;">
+  <h3>Monthly Sales Report</h3>
+  <p>This is the content of the report...</p>
+</div>
+
+<script>
+  function showDiv() {
+    var div = document.getElementById('reportDiv');
+    div.style.display = div.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
